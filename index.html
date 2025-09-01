@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Perfil – Componente fijo a la izquierda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Layout en 2 columnas: izquierda (tarjeta) y derecha (contenido libre) -->
+    <div class="app-layout">
+      <aside class="sidebar">
+        <article class="card" aria-labelledby="profile-name">
+          <div class="card__avatar">
+            <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=600&auto=format&fit=crop" alt="Avatar" />
+          </div>
+          <h1 class="card__name" id="profile-name">Ramses Ochoa</h1>
+          <div style="text-align:center"><span class="card__role">Web developer</span></div>
+
+          <div class="card__divider"></div>
+
+          <div class="info">
+            <div class="info-item">
+              <div class="info-item__icon" aria-hidden="true">✉️</div>
+              <div>
+                <div class="info-item__label">Correo</div>
+                <div class="info-item__value">ramsesochoa11.com</div>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-item__icon" aria-hidden="true">📱</div>
+              <div>
+                <div class="info-item__label">Telefono</div>
+                <div class="info-item__value">+52 695-187-1659</div>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-item__icon" aria-hidden="true">🎂</div>
+              <div>
+                <div class="info-item__label">Cumpleaños</div>
+                <div class="info-item__value">Febrero 17, 2004</div>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-item__icon" aria-hidden="true">📍</div>
+              <div>
+                <div class="info-item__label">Localidad</div>
+                <div class="info-item__value">Teacapan, Sinaloa, Mexico</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card__social">
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn" class="icon-li" style="color:#0A66C2">
+              <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.036-1.85-3.036-1.853 0-2.135 1.447-2.135 2.942v5.663H9.354V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.368-1.85 3.6 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433A2.062 2.062 0 1 1 5.34 3.31a2.062 2.062 0 0 1-.003 4.123zM6.97 20.452H3.7V9h3.27v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451C23.2 24 24 23.226 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+            <a href="https://github.com/Ramses-8a" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub" class="icon-gh" style="color:#CFCFCF">
+              <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+                <path d="M12 .5C5.73.5.98 5.24.98 11.5c0 4.85 3.14 8.96 7.49 10.41.55.1.75-.24.75-.53 0-.26-.01-.95-.01-1.86-3.05.66-3.69-1.3-3.69-1.3-.5-1.26-1.22-1.6-1.22-1.6-.99-.68.08-.67.08-.67 1.09.08 1.66 1.12 1.66 1.12.98 1.67 2.57 1.19 3.2.91.1-.71.38-1.19.69-1.46-2.44-.28-5-1.22-5-5.44 0-1.2.43-2.19 1.13-2.97-.11-.28-.49-1.41.11-2.94 0 0 .92-.29 3.02 1.13.88-.24 1.82-.36 2.75-.36.93 0 1.87.12 2.75.36 2.1-1.42 3.02-1.13 3.02-1.13.6 1.53.22 2.66.11 2.94.7.78 1.13 1.77 1.13 2.97 0 4.23-2.56 5.16-5 5.44.39.34.74 1.02.74 2.06 0 1.49-.01 2.69-.01 3.05 0 .29.2.64.75.53 4.35-1.45 7.49-5.56 7.49-10.41C23.02 5.24 18.27.5 12 .5z"/>
+              </svg>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook" class="icon-fb" style="color:#1877F2">
+              <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+                <path d="M22.675 0H1.325C.593 0 0 .593 0 1.326v21.348C0 23.407.593 24 1.325 24h11.495v-9.294H9.847V11.06h2.973V8.414c0-2.943 1.796-4.547 4.419-4.547 1.256 0 2.336.093 2.651.135v3.07h-1.82c-1.428 0-1.704.679-1.704 1.676v2.311h3.407l-.444 3.646h-2.963V24h5.807C23.407 24 24 23.407 24 22.674V1.326C24 .593 23.407 0 22.675 0z"/>
+              </svg>
+            </a>
+        </article>
+      </aside>
+
+      <section class="content-panel" aria-labelledby="about-title">
+        <nav class="tabs" role="tablist">
+          <a class="tab active" role="tab" aria-selected="true" href="#" data-tab="about">Acerca</a>
+          <a class="tab" role="tab" aria-selected="false" href="#" data-tab="resume">Currículum</a>
+          <a class="tab" role="tab" aria-selected="false" href="#" data-tab="portfolio">Portafolio</a>
+          <a class="tab" role="tab" aria-selected="false" href="#" data-tab="blog">Blog</a>
+          <a class="tab" role="tab" aria-selected="false" href="#" data-tab="contact">Contacto</a>
+        </nav>
+
+        <div class="panel-body" id="about">
+          <h2 class="panel-title" id="about-title">Sobre mí</h2>
+          <span class="panel-underline" aria-hidden="true"></span>
+          <p>Soy Director Creativo y Diseñador UI/UX de Sídney, Australia, dedicado al desarrollo web y a los medios impresos. Disfruto transformar problemas complejos en soluciones simples, bellas e intuitivas.</p>
+          <p>Mi trabajo es construir tu sitio web para que sea funcional y fácil de usar, pero al mismo tiempo atractivo. Además, aporto un toque personal a tu producto y me aseguro de que sea llamativo y sencillo de utilizar. Mi objetivo es transmitir tu mensaje e identidad de la manera más creativa posible. He creado diseño web para muchas marcas reconocidas.</p>
+
+          <section class="services" aria-labelledby="doing-title">
+            <h3 class="services-title" id="doing-title">Lo que hago</h3>
+            <div class="services-grid">
+              <article class="service-card">
+                <div class="service-icon" aria-hidden="true">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 20L20 4"/>
+                    <path d="M14 4h6v6"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="service-title">Diseño Web</h4>
+                  <p class="service-desc">Diseños modernos y de alta calidad a nivel profesional.</p>
+                </div>
+              </article>
+
+              <article class="service-card">
+                <div class="service-icon" aria-hidden="true">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 8l-4 4 4 4"/>
+                    <path d="M15 8l4 4-4 4"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="service-title">Desarrollo Web</h4>
+                  <p class="service-desc">Sitios de alto rendimiento con estándares profesionales.</p>
+                </div>
+              </article>
+
+              <article class="service-card">
+                <div class="service-icon" aria-hidden="true">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="7" y="3" width="10" height="18" rx="2"/>
+                    <circle cx="12" cy="17" r="1"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="service-title">Apps Móviles</h4>
+                  <p class="service-desc">Desarrollo profesional para iOS y Android.</p>
+                </div>
+              </article>
+
+              <article class="service-card">
+                <div class="service-icon" aria-hidden="true">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="7" width="18" height="12" rx="2"/>
+                    <circle cx="12" cy="13" r="3"/>
+                    <path d="M8 7l1.5-2h5L16 7"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="service-title">Fotografía</h4>
+                  <p class="service-desc">Fotografías de alta calidad para cualquier categoría.</p>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+
+        <!-- Panel Currículum (oculto por defecto) -->
+        <div class="panel-body" id="resume" hidden>
+          <h2 class="panel-title">Currículum</h2>
+          <span class="panel-underline" aria-hidden="true"></span>
+
+          <section class="resume-section">
+            <header class="resume-header">
+              <span class="resume-icon" aria-hidden="true">📚</span>
+              <h3 class="resume-title">Educación</h3>
+            </header>
+            <ul class="timeline">
+              <li class="timeline-item">
+                <div>
+                  <h4 class="timeline-role">University School Of The Arts</h4>
+                  <div class="timeline-period">2007 — 2008</div>
+                  <p class="timeline-desc">Nemo enim ipsam voluptatem, blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi.</p>
+                </div>
+              </li>
+              <li class="timeline-item">
+                <div>
+                  <h4 class="timeline-role">New York Academy Of Art</h4>
+                  <div class="timeline-period">2006 — 2007</div>
+                  <p class="timeline-desc">Ratione voluptatem sequi nesciunt, facere quisquam facere menda ossimus, omnis voluptas assumenda est omnis..</p>
+                </div>
+              </li>
+              <li class="timeline-item">
+                <div>
+                  <h4 class="timeline-role">High School Of Art And Design</h4>
+                  <div class="timeline-period">2002 — 2004</div>
+                  <p class="timeline-desc">Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur magni dolores eos.</p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section class="resume-section">
+            <header class="resume-header">
+              <span class="resume-icon" aria-hidden="true">💼</span>
+              <h3 class="resume-title">Experiencia</h3>
+            </header>
+            <ul class="timeline">
+              <li class="timeline-item">
+                <div>
+                  <h4 class="timeline-role">Creative Director</h4>
+                  <div class="timeline-period">2015 — Presente</div>
+                  <p class="timeline-desc">Nemo enim ipsam voluptatem blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi.</p>
+                </div>
+              </li>
+              <li class="timeline-item">
+                <div>
+                  <h4 class="timeline-role">Art Director</h4>
+                  <div class="timeline-period">2013 — 2015</div>
+                  <p class="timeline-desc">Nemo enim ipsam voluptatem deleniti atque corrupti, quos dolores et quas molestias excepturi.</p>
+                </div>
+              </li>
+              <li class="timeline-item">
+                <div>
+                  <h4 class="timeline-role">Web Designer</h4>
+                  <div class="timeline-period">2010 — 2013</div>
+                  <p class="timeline-desc">Nemo enim ipsam voluptatem blanditiis praesentium voluptatum deleniti atque corrupti.</p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section class="resume-section">
+            <h3 class="resume-title">Mis habilidades</h3>
+            <div class="skills">
+              <div class="skill">
+                <div class="skill-header"><span>Web Design</span><span>80%</span></div>
+                <div class="skill-bar"><span style="width: 80%"></span></div>
+              </div>
+              <div class="skill">
+                <div class="skill-header"><span>Graphic Design</span><span>70%</span></div>
+                <div class="skill-bar"><span style="width: 70%"></span></div>
+              </div>
+              <div class="skill">
+                <div class="skill-header"><span>Branding</span><span>90%</span></div>
+                <div class="skill-bar"><span style="width: 90%"></span></div>
+              </div>
+              <div class="skill">
+                <div class="skill-header"><span>WordPress</span><span>50%</span></div>
+                <div class="skill-bar"><span style="width: 50%"></span></div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- Panel Portafolio (oculto por defecto) -->
+        <div class="panel-body" id="portfolio" hidden>
+          <h2 class="panel-title">Portafolio</h2>
+          <span class="panel-underline" aria-hidden="true"></span>
+          <p>Aquí se mostrarán mis proyectos y trabajos realizados.</p>
+        </div>
+
+        <!-- Panel Blog (oculto por defecto) -->
+        <div class="panel-body" id="blog" hidden>
+          <h2 class="panel-title">Blog</h2>
+          <span class="panel-underline" aria-hidden="true"></span>
+          <p>Aquí se mostrarán mis artículos y publicaciones del blog.</p>
+        </div>
+
+        <!-- Panel Contacto (oculto por defecto) -->
+        <div class="panel-body" id="contact" hidden>
+          <h2 class="panel-title">Contacto</h2>
+          <span class="panel-underline" aria-hidden="true"></span>
+          <p>Información de contacto y formulario.</p>
+        </div>
+      </section>
+    </div>
+
+    <!-- JS solo para animaciones u otras mejoras -->
+    <script type="module" src="assets/js/app.js" defer></script>
+  </body>
+</html>
